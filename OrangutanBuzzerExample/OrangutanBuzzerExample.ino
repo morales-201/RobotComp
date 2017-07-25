@@ -88,7 +88,7 @@ void loop()                     // run over and over again
   if (currentIdx < MELODY_LENGTH && !buzzer.isPlaying())
   {
     // play note at max volume
-    buzzer.playNote(note[currentIdx], duration[currentIdx]*2, 15);
+    buzzer.playNote(note[currentIdx], duration[currentIdx], 15);
      
     // optional LCD feedback (for fun)
     lcd.gotoXY(0, 1);                           // go to start of the second LCD line
